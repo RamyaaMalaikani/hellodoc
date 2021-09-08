@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HelloDoc Landing Page</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/temp.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div id="content-container">
+            <h1>HelloDoc</h1>
+            <h3>Dermatologist in your hand!
+            </h3>
+            <p>HelloDoc is a not so human Dermatologist who can classify your skin diseases. Click choose file and upload the image!</p>
+
+
+            <form method="post" enctype="multipart/form-data">
+                <div id="buttons">
+                    <input type=file name="image" class="upload"  >
+                    <input type=submit value=Predict class="sub">
+                </div>
+                <br>
+                <div id="output">
+                    Prediction Results
+                    <div id="box">
+                        <div id="dis" > Basel cell Cancer :{{b}} %</div>
+                        <div id="dis" >Seborrhoeic keratosis: {{sk}} %</div>
+                        <div id="dis" > Lentigo : {{sl}} %</div>
+                        <div id="dis">  Squamous cell carcinoma :{{scc}} %</div>
+                        <div id="dis" >   Melanoma : {{m}} %</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <img src="/static/css/logo.jpg" alt="">
+</body>
+</html>
